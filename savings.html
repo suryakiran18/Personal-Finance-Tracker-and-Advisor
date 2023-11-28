@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <h1>Personal Finance Tracker and Advisor</h1>
+    <div class="input-section">
+      
+      <nav>
+        <ul>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="expenses.html">expenses</a></li>
+            <li><a href="savings.html">savings</a></li>
+            <li><a href="advice.html">advice</a></li>
+
+        </ul>
+    </nav>
+  <main>
+    <div class="overview">
+      <h4>Your Budget Overview:</h4>
+      <p id="savings-difference"></p>
+      <br>
+      <br>
+      </div>
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+        </select>
+      <div class="savings-section">
+        <h3>Savings Tracker</h3>
+        <div class="savings-form">
+          <label for="savings-amount">Savings Amount:</label>
+          <input type="number" id="savings-amount" placeholder="Enter your current savings amount">
+          <label for="savings-goal">Savings Goal:</label>
+          <input type="number" id="savings-goal" placeholder="Enter your savings goal">
+          <label for="savings-date">Savings Date:</label>
+          <input type="date" id="savings-date" placeholder="Enter your target savings date">
+
+         <button id="calculate-savings-btn">Calculate Savings</button>
+        </div>
+<!-- Add this to the savings.html file where you want to display the savings difference -->
+
+
+        <div class="savings-results">
+          <h4>Your Savings Plan:</h4>
+          <ul>
+            <li>Current Savings: <span id="current-savings"></span></li>
+            <li>Savings Goal: <span id="savings-goal-display"></span></li>
+            <li>Target Savings Date: <span id="target-savings-date"></span></li>
+            <li>saving difference: <span id="saving-difference"></span></li>
+            <li>balance achievment: <span id="balance-achievment"></span></li>
+    </ul>
+  </div>
+</div>
+<div class="Savings-list">
+        <h2>Savings List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Current Savings</th>
+                    <th>Target Savings Date</th>
+                    <th>saving difference</th>
+                    <th>balance achievment</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="Savings-table-body">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                  <td id=""></td>
+                   <td id="total-Current-Savings"></td>
+                   <td id="total-Target-Savings-Date"></td>
+                   <td id="total-saving-difference"></td>
+                   <td id="total-balance-achievment"></td> 
+                  
+                   
+
+                </tr>
+            </tfoot>
+        </table>
+        <td id="total-balance-achievement-container">
+          <span id="total-balance-achievment"></span>
+          <span id="achievement-level"></span>
+        </td>
+        
+    </div>
+    <script src="savings.js"></script>
+</body>
+</html>

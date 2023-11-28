@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Finance Tracker and Advisor</title>
+</head>
+<body>
+    <form id="signup-form">
+        <h1>Welcome to Personal Finance Tracker and Advisor</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      
+        <button type="button" onclick="login()">Submit</button>
+    </form>
+
+    <script>
+        function login() {
+            // Get user input
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Simulate a successful login
+            alert(`Logged in successfully, ${name}!`);
+
+            // Redirect to the income page
+            window.location.href = 'income.html';
+        }
+    </script>
+</body>
+</html>

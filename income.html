@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker App</title>
+</head>
+
+<!-- index.html -->
+<body>
+    <nav>
+        <ul>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="expenses.html">expenses</a></li>
+            <li><a href="savings.html">savings</a></li>
+            <li><a href="advice.html">advice</a></li>
+
+        </ul>
+    </nav>
+    <h1>Welcome to the Home Page</h1>
+    <!-- Your content here -->
+</body>
+
+<body>
+    <h1>Personal Finance Tracker and Advisor</h1>
+    <div class="input-section">
+        
+  <main>
+    <div class="overview">
+      <h4>Your Budget Overview:</h4>
+      <br>
+      <br>
+
+      <b> Your total income this month: </b>
+      
+      <b id="total-amount"></b>
+    </div>
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="Salary">Salary</option>
+            <option value="Stocks">Stocks</option>
+            <option value="Trading">Trading</option>
+            <option value="Bitcoin">Bitcoin</option>
+            <option value="Others">Others</option>
+        </select>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+        <button id="add-Income-btn">Add-Income</button>
+    </div>
+    <div class="Income-list">
+        <h2>Income List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="Income-table-body">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                  
+                   <td id="total-amount"></td>
+                    
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="income.js"></script>
+</body>
+</html>
